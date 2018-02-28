@@ -17,13 +17,17 @@ if [ "$#" -ne 3 ]; then
 fi
 
 # Node's database directory
-data_dir = $1
+data_dir=$1
 
 # Private network id
-network_id = $2
+network_id=$2
 
 # Port number
-port_number = $3
+port_number=$3
+
+echo ${data_dir}
+echo ${network_id}
+echo ${port_number}
 
 
 # Initialize the geth client
