@@ -43,7 +43,7 @@ You will be prompted for a passphrase. Enter the passphrase and do not forget th
 
 This step will create a new account in coinbase and a unique address is generated. Store this address and passphrase for future use.
 
-The account keys are stored under <DATADIR>/keystore
+The account keys are stored under **data_dir/keystore**
 
 5) To check your default account, execute the below command:
 
@@ -77,4 +77,35 @@ The balance that is showing up in your account is virtual ether and can be used 
 
 A single node private Ethereum blockchain network is ready!
 
-**Note:** To create a multi-node Ethereum block chain cluster, repeat the steps 2 through 6, with a **different port_number** each time, for as many times as the number of nodes you need in the network.
+
+
+**To create a nulti-node Ethereum block chain cluster:**
+
+Repeat the steps 2 through 6, with a **different port_number** each time, for as many times as the number of nodes you need in the network.
+
+After repeating the steps, the open terminal will be 2 times (one where the geth client is running and an other where the javascript console for that client is running) the number of nodes.
+
+7) On the javascript console of the created nodes, check if you have any peers:
+
+**net.peerCount** - This will give you the peers count
+
+**admin.peers** - This will you give you the peer information, if they exist
+
+To add peers to a network, 
+
+admin.addPeer("enode_url")
+
+**enode_url** - This is obtained from the 'self' variable, which is present in the terminal where the geth client was initialized for the node.
+
+Replace the IP address at the end of the enode with 127.0.0.1 (this is the local host ip address)
+
+**Example:** admin.addPeer("enode://c2fda93223174a6b4acab60d62fe480df69f0dbdf85f674d44bb27b396b4aa8756a1e0c67670ba116c120ad44f8d85c66cd83fa745113880c41bc991d4a7210a@127.0.0.1:30300")
+
+
+Check for the peer count to ensure that the node(s) have joined the network.
+
+
+
+**Smart Contracts:**
+
+COMING SOON!!
