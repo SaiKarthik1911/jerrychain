@@ -3,8 +3,9 @@ A private blockchain to test your smart contracts on the Ethereum blockchain pla
 
 Pre-requisites:
 
-OS X operating system
-Install and update Homebrew - https://brew.sh/
+1) OS X operating system
+
+2) Install and update Homebrew - https://brew.sh/
 
 Steps:
 
