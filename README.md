@@ -22,7 +22,9 @@ This step will install the geth client on your machine
 **sh tom.sh <data_dir> <network_id> <port_number>**
 
 **data_dir** - the location where your local private blockchain data will be stored
+
 **network_id** - a unique id that you will assign to your private network
+
 **port_number** - a port number which will be used for any communication to this node
 
 This step will initialize the geth client and start a private blockchain network
