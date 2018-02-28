@@ -7,6 +7,8 @@ Pre-requisites:
 
 2) Install and update Homebrew - https://brew.sh/
 
+3) Clone or download this repository
+
 Steps:
 
 1) Execute the brew_ethereum.sh file
@@ -17,7 +19,11 @@ This step will install the geth client on your machine
 
 2) Execute the tom.sh file
 
-**sh tom.sh**
+**sh tom.sh <data_dir> <network_id> <port_number>**
+
+**data_dir** - the location where your local private blockchain data will be stored
+**network_id** - a unique id that you will assign to your private network
+**port_number** - a port number which will be used for any communication to this node
 
 This step will initialize the geth client and start a private blockchain network
 
@@ -59,12 +65,14 @@ Check your balance with
 
 Run  **miner.start()**
 
-Look at the other terminal window, you should see some mining action in the logs. Check your balance again and it should be higher.
+Look at the other terminal, you should see some mining action in the logs. Check your balance again and it should be higher.
 
 To end mining 
 
 Run   **miner.stop()**
 
-This is virtual ether and can be used only for testing your smart contracts in your private blockchain network.
+The balance that is showing up in your account is virtual ether and can be used only for testing your smart contracts in your private blockchain network.
 
+A single node private Ethereum blockchain network is ready!
 
+**Note:** To create a multi-node Ethereum block chain cluster, repeat the steps 2 through 6, with a **different port_number** each time, for as many times as the number of nodes you need in the network.
