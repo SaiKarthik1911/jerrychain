@@ -1,4 +1,4 @@
-# jerrychain
+# jerrychain repo
 A private blockchain to test your smart contracts on the Ethereum blockchain platform
 
 Pre-requisites:
